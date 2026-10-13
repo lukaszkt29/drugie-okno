@@ -5,5 +5,7 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="okno.MainWindow"
         Title="okno">
-    Welcome to Avalonia!
+    <TextBlock Text="Warsztat"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center" />
 </Window>
