@@ -15,7 +15,7 @@
                    Margin="0,0,0,16" />
 
         <Grid DockPanel.Dock="Bottom"
-              ColumnDefinitions="*,Auto"
+              ColumnDefinitions="*,Auto,Auto"
               Margin="0,16,0,0">
             <TextBox x:Name="InputBox"
                      PlaceholderText="Wpisz tekst..."
@@ -24,8 +24,27 @@
                     Content="Dodaj"
                     Margin="8,0,0,0"
                     Click="OnAddClick" />
+            <Button Grid.Column="2"
+                    Content="Usuń"
+                    Margin="8,0,0,0"
+                    Click="OnDeleteClick" />
         </Grid>
 
-        <ListBox x:Name="NotesList" />
+        <ListBox x:Name="NotesList"
+                 KeyDown="OnNotesKeyDown">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="*,Auto">
+                        <TextBlock Text="{Binding}"
+                                   VerticalAlignment="Center"
+                                   TextWrapping="Wrap" />
+                        <Button Grid.Column="1"
+                                Content="Usuń"
+                                Margin="8,0,0,0"
+                                Click="OnDeleteItemClick" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </DockPanel>
 </Window>
