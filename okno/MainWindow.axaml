@@ -6,7 +6,8 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="okno.MainWindow"
         Title="okno"
-        WindowState="Maximized">
+        WindowState="Maximized"
+        CanResize="False">
     <DockPanel Margin="16">
         <TextBlock DockPanel.Dock="Top"
                    Text="Warsztat"
