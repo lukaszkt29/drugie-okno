@@ -48,6 +48,7 @@
         </Grid>
 
         <ListBox x:Name="NotesList"
+                 SelectionMode="Multiple"
                  DoubleTapped="OnNotesDoubleTapped"
                  KeyDown="OnNotesKeyDown">
             <ListBox.ItemTemplate>
