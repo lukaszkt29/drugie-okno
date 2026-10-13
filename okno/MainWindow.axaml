@@ -15,30 +15,40 @@
                    Margin="0,0,0,16" />
 
         <Grid DockPanel.Dock="Bottom"
-              ColumnDefinitions="*,Auto,Auto"
+              ColumnDefinitions="*,Auto,Auto,Auto"
               Margin="0,16,0,0">
             <TextBox x:Name="InputBox"
                      PlaceholderText="Wpisz tekst..."
                      KeyDown="OnInputKeyDown" />
-            <Button Grid.Column="1"
+            <Button x:Name="AddButton"
+                    Grid.Column="1"
                     Content="Dodaj"
                     Margin="8,0,0,0"
                     Click="OnAddClick" />
             <Button Grid.Column="2"
+                    Content="Edytuj"
+                    Margin="8,0,0,0"
+                    Click="OnEditClick" />
+            <Button Grid.Column="3"
                     Content="Usuń"
                     Margin="8,0,0,0"
                     Click="OnDeleteClick" />
         </Grid>
 
         <ListBox x:Name="NotesList"
+                 DoubleTapped="OnNotesDoubleTapped"
                  KeyDown="OnNotesKeyDown">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Grid ColumnDefinitions="*,Auto">
+                    <Grid ColumnDefinitions="*,Auto,Auto">
                         <TextBlock Text="{Binding}"
                                    VerticalAlignment="Center"
                                    TextWrapping="Wrap" />
                         <Button Grid.Column="1"
+                                Content="Edytuj"
+                                Margin="8,0,0,0"
+                                Click="OnEditItemClick" />
+                        <Button Grid.Column="2"
                                 Content="Usuń"
                                 Margin="8,0,0,0"
                                 Click="OnDeleteItemClick" />
