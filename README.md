@@ -8,4 +8,8 @@
 8. dodanie checkbow jako opcje na wybieranie tekstow, 36 nowych linijek wszystkie rozumiem
 9. ustawienie wielkosci okna początkowego na pełen ekran, 1 linijka wszystko rozumiem
 10. blokowanie mozliwosci zmiany okna, 1 linijka wsyzstko rozumiem
-11. 
+11. dodanie aktualnej daty
+12. dodanie aktualnej godziny
+13. dodawnie drugiego napisu "wszystkie zapisane tekstu"
+14. dodanie 3 napisu "wybierz zapisany tekst"
+15. zmiana nazwy aplikacji na "superteksty"
