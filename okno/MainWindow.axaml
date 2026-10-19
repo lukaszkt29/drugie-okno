@@ -54,11 +54,15 @@
         </Grid>
 
         <DockPanel>
+            <TextBlock DockPanel.Dock="Top"
+                       Text="wszystkie zapisane tekstu"
+                       FontSize="16"
+                       Margin="0,0,0,8" />
             <CheckBox x:Name="SelectAllBox"
-                      DockPanel.Dock="Top"
-                      Content="Zaznacz wszystkie"
-                      Margin="0,0,0,8"
-                      Click="OnSelectAllClick" />
+                       DockPanel.Dock="Top"
+                       Content="Zaznacz wszystkie"
+                       Margin="0,0,0,8"
+                       Click="OnSelectAllClick" />
             <ListBox x:Name="NotesList"
                      SelectionMode="Multiple"
                      DoubleTapped="OnNotesDoubleTapped"
