@@ -1,3 +1,4 @@
+using System;
 using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Interactivity;
@@ -11,6 +12,7 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        DateTextBlock.Text = $"Data: {DateTime.Now:dd.MM.yyyy}";
     }
 
     private void OnAddClick(object? sender, RoutedEventArgs e)

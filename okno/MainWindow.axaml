@@ -13,6 +13,12 @@
                    Text="Warsztat"
                    FontSize="24"
                    HorizontalAlignment="Center"
+                   Margin="0,0,0,8" />
+
+        <TextBlock x:Name="DateTextBlock"
+                   DockPanel.Dock="Top"
+                   FontSize="16"
+                   HorizontalAlignment="Center"
                    Margin="0,0,0,16" />
 
         <Grid DockPanel.Dock="Bottom"
