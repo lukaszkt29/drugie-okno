@@ -10,6 +10,6 @@
 10. blokowanie mozliwosci zmiany okna, 1 linijka wsyzstko rozumiem
 11. dodanie aktualnej daty
 12. dodanie aktualnej godziny
-13. dodawnie drugiego napisu "wszystkie zapisane tekstu"
-14. dodanie 3 napisu "wybierz zapisany tekst"
+13. dodawnie drugiego napisu "wszystkie zapisane tekstu", 8 linijek wszystkie rozumiem
+14. dodanie 3 napisu "wybierz zapisany tekst" 4 linijiki wszystkie rozumiem
 15. zmiana nazwy aplikacji na "superteksty"
